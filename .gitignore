@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Project outputs (regenerable) — but keep a curated slice for the public repo
+# (the notebook loads these, and they back the results in the report).
+outputs/*
+!outputs/REPORT.md
+!outputs/results.csv
+!outputs/controlled_rank_sweep.json
+!outputs/rank_sweep.json
+!outputs/controlled_plot_8_rank_sweep.png
+!outputs/plot_8_rank_sweep.png
+
+# Course reference material (not ours to publish)
+nir ML course instructions and lectures/
+
+# Video data — local only (large clips, not ours to publish; re-download via
+# the escalator URL in scripts/video_stage1.py). Video outputs (gif, model,
+# pngs) are already covered by the outputs/ rule above.
+data/
