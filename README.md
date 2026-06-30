@@ -70,6 +70,13 @@ solver, unroll it, and learn its hyper-parameters end-to-end with backprop.
 
 ## How to run
 
+**Quickest (recommended):** open [`deep_unfolded_rpca.ipynb`](deep_unfolded_rpca.ipynb)
+and *Run All*. It trains the `K = 10` network and reproduces the main results in
+a few minutes, then shows the rank and depth studies. It also runs on Google
+Colab — the first cell clones this repo and installs the dependencies.
+
+To run the full experiment suite from the command line instead:
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
@@ -108,7 +115,7 @@ deep_unfolded_rpca/   # library
 └── utils.py          # device + seeding
 
 scripts/              # experiment runners (call into the package)
-outputs/              # produced at runtime (gitignored)
+outputs/              # results (a curated slice is committed; rest is runtime)
 ```
 
 ## Methods compared
