@@ -70,8 +70,8 @@ import os, sys, json
 
 # Make the deep_unfolded_rpca package importable; clone the repo on Colab.
 if not os.path.isdir("deep_unfolded_rpca"):
-    !git clone https://github.com/roeygraif/nir_ai_course.git
-    os.chdir("nir_ai_course")
+    !git clone https://github.com/roeygraif/Deep-Unfolded-Robust-PCA.git
+    os.chdir("Deep-Unfolded-Robust-PCA")
     !pip install -q -r requirements.txt
 sys.path.insert(0, os.getcwd())
 
